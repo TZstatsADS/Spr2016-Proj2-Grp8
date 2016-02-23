@@ -8,9 +8,9 @@ library(xts)
 library(leaflet)
 
 ##
-A <- readRDS("~/Desktop/ONE.Rds")
-FIVE <- readRDS("~/Desktop/FIVE.Rds")
-THREE <- readRDS("~/Desktop/THREE.Rds")
+A <- readRDS("ONE.Rds")
+FIVE <- readRDS("FIVE.Rds")
+THREE <- readRDS("THREE.Rds")
 
 C <- data.frame(Borough = A$Borough[A$Status == "Closed"], 
                 Complaint.Type = A$Complaint.Type[A$Status == "Closed"],Days = A$Days[A$Status == "Closed"])
